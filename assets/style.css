@@ -1,12 +1,13 @@
+/* background de la partie supérieure*/
 body {
     background: url('Illustrations/Bathome1.png');
 }
 /* Changer la couleur de fond lorsque la souris passe sur le logo */
-img:hover {
+header img:hover {
     background-color: yellow;
 }
 /* souligne et mise en gras de la rubrique menu*/
-li a {
+a {
     color: white;
     text-decoration: underline;
     font-weight: bold;
@@ -14,6 +15,12 @@ li a {
 p {
     color: white;
 }
+h2 {
+    color: white;
+}
 h1{
+    color: white;
+}
+h3 {
     color: white;
 }
