@@ -1,16 +1,37 @@
-/* background de la partie supérieure*/
-body {
+body{
+    margin: 0px;
+    padding: 20px;
+    border-left: white 10px;
+    border-right: white 10px;
+    background-color: black;
+    
+}
+/* background de la partie header*/
+header {
     background: url('Illustrations/Bathome1.png');
+    background-size: cover;
+    width: 1440px;
+    height: 901px;
 }
 /* Changer la couleur de fond lorsque la souris passe sur le logo */
 header img:hover {
-    background-color: yellow;
+    background-color: #ffff00;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
 }
 /* souligne et mise en gras de la rubrique menu*/
-a {
-    color: white;
-    text-decoration: underline;
+.menu li a{
     font-weight: bold;
+    text-decoration: underline;
+}
+/* bouton style*/
+.boutons li a{
+    text-decoration: none;
+}
+ul li a{
+    color: white;
 }
 p {
     color: white;
@@ -22,5 +43,11 @@ h1{
     color: white;
 }
 h3 {
+    color: white;
+}
+span {
+    color: yellow;
+}
+label {
     color: white;
 }
