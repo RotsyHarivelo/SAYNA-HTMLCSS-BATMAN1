@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2? family=Rajdhani:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+body {
+    background-color: black; 
+    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+}
+/* background de la partie header*/
+header {
+    background: url(/assets/Illustrations/Bathome1.png);
+    background-size: cover;
+    height: 901px;
+}
+/*navigateur design*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content {
+    width: 80%;
+    margin: 0 auto;
+}
+/* Changer la couleur de fond lorsque la souris passe sur le logo */
+header img:hover {
+    background-color: #ffff00;
+}
+ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+ul li a{
+    color: white;
+}
+/* souligne et mise en gras de la rubrique menu*/
+.menu li a{
+    font-weight: bold;
+    text-decoration: underline;
+}
+/* bouton style*/
+.boutons li a{
+    text-decoration: none;
+}
+
+h1{
+    color: white;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+h2 {
+    color: white;
+    
+}
+h3 {
+    color: white;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22px;
+    font-weight: 200px;
+}
+p {
+    color: white;
+    font-size: 18px;
+}
+span {
+    color: yellow;
+}
+label {
+    color: white;
+}
