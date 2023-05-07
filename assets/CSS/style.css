@@ -4,29 +4,48 @@
     margin: 0;
     padding: 0;
     box-sizing: content-box;
+}
+/*liste des couleurs*/
+:root {
+    --color-yellow: #ffff00;
+    --gradient-1: #eddedf67;
+    --gradient-2: #89000981;
+    --gradient-1hover: #eddedf;
+    --gradient-2hover: #890009;
+    --color: #f8f184;
+    --gradient-3: #eddebf;
+    --gradient-4: #19587d;
+    --color-black: #000;
+    --color-white: #fff;
+    --color: #c4c4c4;
+    --color: #b11313;
+    --color: #0d0e09;
 }  
 /* background de la partie header*/
 header {
     background: url(/assets/Illustrations/Bathome1.png);
-    background-size: cover;
     width: 1440px;
     height: 901px;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
 }
 body {
-    color: white;
-    width: 100%;
-    height: 100vh;
+    color: #fff;
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
-    background-color: black;
+    background-color: #000;
+    font-weight: 300;
 }
 /*navigateur design*/
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    
+    justify-content: space-between;    
+}
+.tete {
+    margin-top: 25px;
+    margin-left: 40px;
 }
 .content {
     width: 80%;
@@ -42,9 +61,9 @@ ul li {
     display: inline-block;
 }
 a {
-    color: white;
+    color: #fff;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
 
 }
@@ -54,14 +73,54 @@ a {
     text-decoration: underline;
     cursor: default;
     
-}
-/* bouton style*/
-.boutons li a{
-    text-decoration: none; 
-}
-
-h1{
     
+}
+/* boutons style*/
+.boutons li a{
+    text-decoration: none;
+    font-family:'Rajdhani', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    margin-top: 10px;
+    padding: 10px 40px;
+    background: linear-gradient(
+        80deg,var(--gradient-1),var(--gradient-2)
+    );       
+} 
+.boutons li a:hover {
+        background: linear-gradient(
+            80deg,var(--gradient-1hover),var(--gradient-2hover)
+        );
+} 
+/*fleche de direction*/
+.fleche {
+    display: block;
+    margin: 0 auto;
+    margin-top: 350px;
+} 
+/* les scrollers et les reseaux*/
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 40px;
+    top: 250px;
+}
+.scroll .reseau {
+    margin-top: 30px;
+}
+.place {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 150px;
+}
+.titre {
+    margin: 20px 0;
+}
+h1{
     font-family: 'Rajdhani', sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -71,7 +130,6 @@ h2 {
     
 }
 h3 {
-    
     font-family: 'Space Grotesk', sans-serif;
     font-size: 22px;
     font-weight: 200px;
@@ -80,10 +138,7 @@ p {
     font-size: 18px;
 }
 span {
-    color: yellow;
-}
-label {
-    
+    color: #ffff00;
 }
 .batman-personage {
     display: flex;
@@ -92,3 +147,11 @@ label {
 footer a img:hover {
     background-color: #ffff00;
 }
+hr {
+    opacity: 0.1;
+    display: block;
+    margin: 0 auto;
+    margin-top: 70px;
+    border-width: 3px;
+    width: 86%;   
+}  
