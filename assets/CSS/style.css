@@ -13,8 +13,8 @@
     --gradient-1hover: #eddedf;
     --gradient-2hover: #890009;
     --color: #f8f184;
-    --gradient-3: #eddebf;
-    --gradient-4: #19587d;
+    --gradient-3: #eddebf53;
+    --gradient-4: #19587d4f;
     --color-black: #000;
     --color-white: #fff;
     --color: #c4c4c4;
@@ -35,6 +35,7 @@ body {
     font-family: 'Rajdhani', sans-serif;
     font-family: 'Space Grotesk', sans-serif;
     background-color: #000;
+    cursor: default;
 }
 /*navigateur design*/
 nav {
@@ -52,9 +53,13 @@ nav {
     padding: 30px 0;
 }
 /* Changer la couleur de fond lorsque la souris passe sur le logo */
+nav image {
+    transition: filter 0.5s;
+}
 nav img:hover {
-    background-color: #ffff00;
+    filter: sepia(100%);
     cursor: pointer;
+    background: none;
 }
 ul li {
     list-style-type: none;
@@ -112,6 +117,7 @@ a {
 .reseau:hover {
     cursor: default;
 }
+/*texte de il est batman*/
 .place {
     display: flex;
     justify-content: center;
@@ -119,6 +125,7 @@ a {
     text-align: center;
     padding-top: 150px;
 }
+/*arrongement des titres,sous-titres et phrases*/
 .titre {
     margin: 25px 0;
 }
@@ -130,16 +137,19 @@ h1{
 h2 {
    font-size: 12px; 
    font-weight: bold;
-    
+   margin-bottom: 6px;   
 }
 h3 {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 22px;
     font-weight: normal;
+    margin-bottom: 6px;
 }
 h4 {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: normal;
+    margin-top: 6px;
+    
 }
 h5 {
     font-size: 5px;
@@ -148,6 +158,7 @@ p {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 22px;
 }
+/*couleur du span 8.2*/
 span {
     color: #ffff00;
 }
@@ -155,6 +166,7 @@ span {
     display: flex;
     justify-content: space-between;
 }
+/*couleur au survol*/
 .survol:hover {
     transform: scale(1.1);
 }
@@ -179,6 +191,7 @@ hr {
     font-weight: medium;
     margin: 30px 0;
 }
+/*alinement du texte*/
 .texte {
     margin-bottom: 100px;
     text-align: justify;
@@ -189,4 +202,41 @@ hr {
 } 
 .info {
     text-align: center;
+}
+ /*design de l'affiche*/ 
+.content-affiche {
+    display: flex;
+    width: 50%;
+    margin: 80px auto;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.affiche {
+    padding: 20px;
+    background: linear-gradient(
+        150deg,var(--gradient-3),var(--gradient-4)
+    );
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+button {
+    position: relative;
+    top: 240px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+/*emplacement des boutons dans l'affiche*/
+.suivant {
+    right: -90%;
+}
+.retour {
+    right: -1%;
+}
+/*background de la partie formulaire*/
+#formulaire {
+    background: linear-gradient(
+        150deg,var(--gradient-3),var(--gradient-4)
+    );
 }
