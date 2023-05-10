@@ -37,6 +37,22 @@ body {
     background-color: #000;
     cursor: default;
 }
+.bar {
+    border-top: #BCBBBD 4px solid;
+    position: relative;
+    top: 132px;
+    width: 86%;
+    left: 102px;
+    opacity: 0.2;
+}
+hr {
+    opacity: 0.08;
+    display: block;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-width: 2px;
+    width: 100%;   
+}
 /*navigateur design*/
 nav {
     display: flex;
@@ -57,9 +73,13 @@ nav image {
     transition: filter 0.5s;
 }
 nav img:hover {
-    filter: sepia(100%);
+    filter: invert(4%) sepia(100%) saturate(1314%) hue-rotate(357deg) brightness(106%) contrast(101%);
     cursor: pointer;
     background: none;
+}
+nav li a:hover {
+    color: #ffff00;
+
 }
 ul li {
     list-style-type: none;
@@ -122,6 +142,15 @@ a {
 }
 .reseau:hover {
     cursor: default;
+    filter: invert(4%) sepia(100%) saturate(1314%) hue-rotate(357deg) brightness(106%) contrast(101%);
+}
+/*gadget batman*/
+.gadget {
+    width: 150px;
+    
+}
+.nemesis-gadget {
+    display: flex;
 }
 /*texte de il est batman*/
 .place {
@@ -176,21 +205,6 @@ span {
 .survol:hover {
     transform: scale(1.1);
 }
-footer a img:hover {
-    background-color: #ffff00;
-}
-hr {
-    opacity: 0.1;
-    display: block;
-    margin: 0 auto;
-    margin-top: 60px;
-    border-width: 3px;
-    width: 86%;   
-}
-.resp {
-    display: flex;
-    align-items: center;
-}
 .il-est-batman {
     font-family: 'Space Grotesk', sans-serif;
     font-size: 25px;
@@ -233,6 +247,14 @@ button {
     border: none;
     cursor: pointer;
 }
+/*Bonde annonce*/
+.bonde-annonce img {
+    padding-left: 30px;
+    padding-bottom: 60px;
+    margin: 80px auto;
+    align-items: center;
+    justify-content: center;
+}
 /*emplacement des boutons dans l'affiche*/
 .suivant {
     right: -90%;
@@ -245,4 +267,162 @@ button {
     background: linear-gradient(
         150deg,var(--gradient-3),var(--gradient-4)
     );
+    padding: 70px 0;
+}
+/*Design de la partie formulaire*/
+.form-tout {
+    width: 50%;
+    margin: 0 auto;
+}
+#formulaire h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form {
+    margin: 25px 0;
+}
+.coche {
+    opacity: 0.5;
+    font-size: 16px;
+}
+.form-tout p{
+    margin: 25px 0;
+}
+.form-tout h1 {
+    padding-bottom: 45px;
+}
+.form-tout input[type="email"], textarea {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 2px solid #ffffff39;
+    width: 100%;
+    background-color: transparent;
+    padding: 5px 0;
+}
+.form-tout input[type="email"]:hover {
+    cursor: default;
+}
+.souhait {
+    margin: 10px 0;
+    border-bottom: 2px solid #ffffff39;
+    font-size: 16px;
+    opacity: 0.5;
+}
+.form-tout img {
+    transform: rotate(30deg);
+    width: 18px;
+    background: none;
+}
+.choix {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.choix p {
+    font-size: 16px;
+    margin-top: 40px;
+    border-top: none;
+    border-bottom: 2px solid #ffffff39;
+    width: 100%;
+    opacity: 0.5;
+}
+::placeholder {
+    font-size: 15px;
+}
+.form {
+    font-size: 25px;
+    font-weight: normal;
+}
+/*Design des boutons dans le formulaire*/
+.btn-form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btn-form input[type="radio"] {
+    opacity: 0;
+}
+.btn-form label {
+    border: 2px solid;
+    border-image: linear-gradient( 100deg,var(--gradient-3),var(--gradient-4)
+    ) 1;
+    padding: 10px 30px;
+    margin-right: 40px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+.btn-form label:hover {
+    background: linear-gradient( 100deg,var(--gradient-3),var(--gradient-4)
+    );
+} 
+input[type="submit"]{
+    display: block;
+    width: 250px;
+    margin: 20px auto;
+    padding: 25px 0;
+    cursor: pointer;
+    background: linear-gradient(
+        80deg,#eddedf85,#8900099a
+    );
+    border: none;
+}
+input[value="CONFIRMER"] {
+    color: var(--color-white);
+    font-size: 15px;
+}
+/*design de la partie citation*/
+.citation {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.auteur {
+    padding-top: 25px;
+    font-weight: normal;
+    font-size: 14px;
+    opacity: 0.8;
+
+}
+.citation-texte {
+    font-size: 17px;
+}
+/*design des guillement*/
+#citation .guillement-g {
+    margin-top: 200px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+
+}
+#citation .guillement-d {
+    float: right;
+    margin-right: 100px;
+}
+/*design du footer citation*/
+.icon-item img {
+    background: none;
+}
+footer .icon-item img:hover {
+    cursor: default;
+    background: none;
+    filter: invert(4%) sepia(100%) saturate(1314%) hue-rotate(357deg) brightness(106%) contrast(101%);
+}
+.resp {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+.icon-item {
+    text-align: center;
+    margin: 40px;
+}
+.social-item {
+    padding: 15px;
+}
+.x {
+    padding-left: 10px;
+    padding-right: 10px;
 }
