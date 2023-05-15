@@ -37,13 +37,30 @@ body {
     background-color: #000;
     cursor: default;
 }
+/*les barres*/
 .bar {
     border-top: #BCBBBD 4px solid;
     position: relative;
     top: 132px;
-    width: 86%;
+    width: 86.2%;
     left: 102px;
     opacity: 0.2;
+}
+.left-bar {
+    position: fixed;
+    top: 0;
+    right: 91px;
+    height: 100%;
+    border: #BCBBBD 2px solid;
+    opacity: 0.1;
+}
+.right-bar {
+    position: fixed;
+    top: 0;
+    left: 100px;
+    height: 100%;
+    border: #BCBBBD 2px solid;
+    opacity: 0.1;
 }
 hr {
     opacity: 0.08;
@@ -120,7 +137,7 @@ a {
 .fleche {
     display: block;
     margin: 30px auto;
-    margin-top: 320px;
+    margin-top: 380px;
 } 
 /* les scrollers et les reseaux*/
 .scroll {
@@ -147,10 +164,15 @@ a {
 /*gadget batman*/
 .gadget {
     width: 150px;
-    
+    background: none;
+    position: absolute;
+    left: 240px;
+    top: 2090px;
 }
 .nemesis-gadget {
     display: flex;
+    align-items: baseline;
+
 }
 /*texte de il est batman*/
 .place {
@@ -162,7 +184,12 @@ a {
 }
 /*arrongement des titres,sous-titres et phrases*/
 .titre {
-    margin: 25px 0;
+    margin: 30px 0;
+    padding-top: 50px;
+}
+/*batman au cinema*/
+#batman-cinema {
+    margin-top: 100px;
 }
 h1{
     font-family: 'Rajdhani', sans-serif;
@@ -248,12 +275,15 @@ button {
     cursor: pointer;
 }
 /*Bonde annonce*/
-.bonde-annonce img {
+.bonde-annonce {
     padding-left: 30px;
     padding-bottom: 60px;
     margin: 80px auto;
     align-items: center;
     justify-content: center;
+}
+.bonde-annonce iframe:hover {
+    border: var(--color-yellow);
 }
 /*emplacement des boutons dans l'affiche*/
 .suivant {
@@ -268,6 +298,11 @@ button {
         150deg,var(--gradient-3),var(--gradient-4)
     );
     padding: 70px 0;
+    
+}
+#formulaire {
+    position: relative;
+    z-index: 99;
 }
 /*Design de la partie formulaire*/
 .form-tout {
@@ -277,6 +312,7 @@ button {
 #formulaire h1 {
     text-align: center;
     margin-bottom: 40px;
+    
 }
 .form {
     margin: 25px 0;
@@ -333,6 +369,15 @@ button {
 .form {
     font-size: 25px;
     font-weight: normal;
+}
+input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-left: 15px;
+    margin-top: 10px;  
+}
+input[type="checkbox"]:hover {
+    cursor: pointer;
 }
 /*Design des boutons dans le formulaire*/
 .btn-form {
@@ -425,4 +470,12 @@ footer .icon-item img:hover {
 .x {
     padding-left: 10px;
     padding-right: 10px;
+}
+.DC {
+    padding-right: 14px;
+    border: none;
+}
+.DC:hover {
+    filter: invert(4%) sepia(100%) saturate(1314%) hue-rotate(357deg) brightness(106%) contrast(101%);
+    cursor: default;
 }
